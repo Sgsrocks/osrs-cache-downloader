@@ -183,7 +183,7 @@ public class CacheRequester {
 								inputBuffer.clear();
 								input.read(inputBuffer.array());
 								int index = inputBuffer.get() & 0xff;
-								int file = inputBuffer.getShort();
+								int file = inputBuffer.getShort() & 0xFFFF;
 								int compression = (inputBuffer.get() & 0xff) & 0x7f;
 								int fileSize = inputBuffer.getInt();
 								long hash = ((long) index << 16) | file;

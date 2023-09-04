@@ -1,2 +1,2 @@
-java -cp out com.method.rscd.CacheDownloader
+java -Xmx10g -cp out com.method.rscd.CacheDownloader
 pause

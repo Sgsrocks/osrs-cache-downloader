@@ -20,7 +20,7 @@ import java.util.zip.CRC32;
 public class CacheDownloader {
 
 	private static final int MAJOR_VERSION = 212;
-	private static final int WORLD = 112;
+	private static final int WORLD = 2;
 
 	
 	private CacheRequester requester;
